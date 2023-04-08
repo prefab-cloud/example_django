@@ -1,1 +1,15 @@
+{% load prefab_tags %}
+
 <h1>Django Prefab Demo</h1>
+
+<p>
+<strong>features.feature-1</strong>: {% prefab_get "features.feature-1" context=context %}
+</p>
+
+<p>
+<strong>features.feature-1</strong>: {% prefab_enabled "features.feature-1" %}
+</p>
+
+<p>
+<strong>config.config-1</strong>: {% prefab_get "config.config-1" %}
+</p>

@@ -1,0 +1,4 @@
+Django==4.2
+django-environ==0.10.0
+prefab-cloud-python==0.3.3
+prefab-cloud-django==0.2.0

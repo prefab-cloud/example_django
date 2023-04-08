@@ -1,1 +1,25 @@
+{% load prefab_tags %}
+
 <h1>Finding config for {{ key }}</h1>
+
+<p>
+<h2><strong>value:</strong>{% prefab_get key lookup_key=lookup_key default=default properties=properties %}</h2>
+</p>
+
+<p>
+  <strong>Lookup key:</strong>{{ lookup_key }}
+</p>
+
+<p>
+  <strong>default:</strong>{{ default }}
+</p>
+
+<p>
+  <strong>properties:</strong>
+  <ul>
+    {% for key, value in properties.items %}
+    <li>{{key}}: {{value}}</li>
+    {% endfor %}
+  </ul>
+</p>
+
