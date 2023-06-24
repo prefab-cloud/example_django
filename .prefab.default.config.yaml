@@ -1,0 +1,5 @@
+log-level:
+  _: DEBUG
+  prefab:
+    views:
+      show: WARN
